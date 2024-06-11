@@ -27,14 +27,14 @@ void Game::showMainMenu() {
         std::cout << "|___|___| \\___/ |__|__|  \\___|  |__|  |__|\\_||_____|  \\___| \\____| \\__,_||__|\\_| \\___/     \n";
         std::cout << "\n";
         std::cout << "1. Iniciar Jogo\n";
-        std::cout << "2. InstruÁıes\n";  // Nova opÁ„o "InstruÁıes"
-        std::cout << "3. Exibir CrÈditos\n";
+        std::cout << "2. Instru√ß√µes\n";  // Nova op√ß√£o "Instru√ß√µes"
+        std::cout << "3. Exibir Cr√©ditos\n";
         std::cout << "4. Sair\n";
         std::cout << "> ";
-        while (!(std::cin >> choice) || choice < 1 || choice > 4) {  // Ajustado para incluir a nova opÁ„o
+        while (!(std::cin >> choice) || choice < 1 || choice > 4) {  // Ajustado para incluir a nova op√ß√£o
             std::cin.clear(); // Limpa o erro de entrada
-            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); // Ignora entrada inv·lida
-            std::cout << "Entrada inv·lida! Por favor, escolha uma opÁ„o entre 1 e 4:\n> ";
+            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); // Ignora entrada inv√°lida
+            std::cout << "Entrada inv√°lida! Por favor, escolha uma op√ß√£o entre 1 e 4:\n> ";
         }
         handleMenuChoice(choice);
     } while (choice != 4);
@@ -49,7 +49,7 @@ void Game::handleMenuChoice(int choice) {
             startGame();
             break;
         case 2:
-            showInstructions();  // Chama a nova funÁ„o para mostrar as instruÁıes
+            showInstructions();  // Chama a nova fun√ß√£o para mostrar as instru√ß√µes
             break;
         case 3:
             showCredits();
@@ -58,23 +58,23 @@ void Game::handleMenuChoice(int choice) {
             std::cout << "Saindo do jogo.\n";
             break;
         default:
-            std::cout << "OpÁ„o inv·lida! Tente novamente.\n";
+            std::cout << "Op√ß√£o inv√°lida! Tente novamente.\n";
             break;
     }
 }
 
 void Game::showInstructions() {
-    std::cout << "\nINSTRU«’ES DO JOGO:\n";
-    std::cout << "1. O objetivo do jogo È se esconder dos monstros. Cada rodada tem um n˙mero crescente de esconderijos e monstros.\n";
-    std::cout << "2. Em cada rodada, escolha um esconderijo. Se um monstro estiver l·, vocÍ ter· uma segunda chance de escapar.\n";
-    std::cout << "3. VocÍ pode encontrar itens durante o jogo:\n";
+    std::cout << "\nINSTRU√á√ïES DO JOGO:\n";
+    std::cout << "1. O objetivo do jogo √© se esconder dos monstros. Cada rodada tem um n√∫mero crescente de esconderijos e monstros.\n";
+    std::cout << "2. Em cada rodada, escolha um esconderijo. Se um monstro estiver l√°, voc√™ ter√° uma segunda chance de escapar.\n";
+    std::cout << "3. Voc√™ pode encontrar itens durante o jogo:\n";
     std::cout << "   - Detector de Monstros: Revela metade dos esconderijos dos monstros.\n";
-    std::cout << "   - Escudo: Protege vocÍ de ser capturado uma vez.\n";
-    std::cout << "4. PontuaÁ„o:\n";
+    std::cout << "   - Escudo: Protege voc√™ de ser capturado uma vez.\n";
+    std::cout << "4. Pontua√ß√£o:\n";
     std::cout << "   - +20 pontos por escapar na primeira tentativa.\n";
     std::cout << "   - +10 pontos por escapar na segunda tentativa.\n";
     std::cout << "DICAS:\n";
-    std::cout << "- Use o Detector de Monstros com sabedoria para reduzir os possÌveis esconderijos dos monstros.\n";
+    std::cout << "- Use o Detector de Monstros com sabedoria para reduzir os poss√≠veis esconderijos dos monstros.\n";
     std::cout << "- Sempre escolha esconderijos diferentes na segunda tentativa.\n";
     std::cout << "Pressione qualquer tecla para voltar ao menu principal...\n";
     std::cin.ignore();
@@ -84,14 +84,14 @@ void Game::showInstructions() {
 void Game::pauseMenu() {
     int choice;
     do {
-        std::cout << "\nJogo pausado. Escolha uma opÁ„o:\n";
+        std::cout << "\nJogo pausado. Escolha uma op√ß√£o:\n";
         std::cout << "1. Reiniciar Jogo\n";
         std::cout << "2. Sair\n";
         std::cout << "> ";
         while (!(std::cin >> choice) || choice < 1 || choice > 2) {
             std::cin.clear(); // Limpa o erro de entrada
-            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); // Ignora entrada inv·lida
-            std::cout << "Entrada inv·lida! Por favor, escolha uma opÁ„o entre 1 e 2:\n> ";
+            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); // Ignora entrada inv√°lida
+            std::cout << "Entrada inv√°lida! Por favor, escolha uma op√ß√£o entre 1 e 2:\n> ";
         }
         handlePauseChoice(choice);
     } while (choice != 2);
@@ -110,7 +110,7 @@ void Game::handlePauseChoice(int choice) {
             exit(0);
             break;
         default:
-            std::cout << "OpÁ„o inv·lida! Tente novamente.\n";
+            std::cout << "Op√ß√£o inv√°lida! Tente novamente.\n";
             break;
     }
 }
@@ -123,15 +123,15 @@ void Game::pauseGame() {
 
 void Game::resetGame() {
     std::cout << "Jogo reiniciado.\n";
-    startGame(); // Chama startGame() novamente apÛs o reset
+    startGame(); // Chama startGame() novamente ap√≥s o reset
 }
 
 void Game::showCredits() {
     std::cout << "\n";
     std::cout << "MONSTRESCURO\n";
     std::cout << "Criado por: Bora, Luan, e Freitas\n";
-    std::cout << "ProgramaÁ„o AvanÁada - APS 2 - Prof. Fabio Bettio\n";
-    std::cout << "RepositÛrio: https://github.com/teu-repositorio/peek-a-monster\n";
+    std::cout << "Programa√ß√£o Avan√ßada - APS 2 - Prof. Fabio Bettio\n";
+    std::cout << "Reposit√≥rio: https://github.com/leonardobora/monstrescuro\n";
     std::cout << "\n";
     std::cout << "Pressione qualquer tecla para voltar ao menu principal...\n";
     std::cin.ignore();
