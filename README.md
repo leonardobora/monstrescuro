@@ -4,7 +4,7 @@
 
 ## Visão Geral
 
-**MONSTRESCURO** é um emocionante jogo de estratégia estilo dungeoncrawler onde você deve usar inteligência e coragem para escapar dos horrores que espreitam nas sombras. Desenvolvido como um projeto acadêmico para a disciplina de Programação Avançada na **Universidade XYZ**, este jogo desafiador leva você para um mundo sombrio repleto de mistérios e perigos ocultos.
+**MONSTRESCURO** é um emocionante jogo de estratégia estilo dungeoncrawler onde você deve usar inteligência e coragem para escapar dos horrores que espreitam nas sombras. Desenvolvido como um projeto acadêmico para a disciplina de Programação Avançada na **UNIBRASIL**, este jogo desafiador leva você para um mundo sombrio repleto de mistérios e perigos ocultos.
 
 ## Narrativa do Jogo
 
